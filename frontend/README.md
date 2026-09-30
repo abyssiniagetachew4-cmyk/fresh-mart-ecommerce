@@ -1,73 +1,194 @@
-# Welcome to your Lovable project
+# Fresh Mart — Grocery E-Commerce Web Application
 
-## Project info
+Fresh Mart is a **full-stack grocery e-commerce web application developed as an academic/class project** to practice modern web development, REST API development, database integration, authentication, and e-commerce functionality.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+The project includes a React-based frontend and a Node.js/Express backend connected to MongoDB.
 
-## How can I edit this code?
+## Features
 
-There are several ways of editing your application.
+### Customer Features
 
-**Use Lovable**
+* Browse grocery products and categories
+* Search and view product information
+* Add products to a shopping cart
+* Manage cart items and quantities
+* User registration and authentication
+* Place orders
+* View order information and status
+* Guest and authenticated shopping flows
+* Checkout and payment options
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+### Admin Features
 
-Changes made via Lovable will be committed automatically to this repo.
+* Admin authentication
+* Product management
+* Category management
+* Order management
+* User management
+* Stock monitoring
+* Order tracking and reporting
 
-**Use your preferred IDE**
+### Payment
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+* Stripe payment integration
+* Cash on Delivery (COD) option
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Technologies Used
 
-Follow these steps:
+### Frontend
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+* React
+* TypeScript
+* Vite
+* Tailwind CSS
+* shadcn/ui
+* Axios
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Backend
 
-# Step 3: Install the necessary dependencies.
-npm i
+* Node.js
+* Express.js
+* Mongoose
+* REST APIs
+* Authentication and authorization
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+### Database
+
+* MongoDB
+
+### Development Tools
+
+* Git
+* GitHub
+* Visual Studio Code
+* npm
+
+## Project Structure
+
+```text
+fresh-mart-ecommerce/
+│
+├── backend/
+│   ├── controllers/
+│   ├── middleware/
+│   ├── models/
+│   ├── routes/
+│   ├── scripts/
+│   └── server.js
+│
+├── frontend/
+│   ├── src/
+│   ├── public/
+│   └── package.json
+│
+├── .gitignore
+└── README.md
+```
+
+## Architecture
+
+The application follows a frontend-backend architecture:
+
+```text
+React + TypeScript
+       │
+       │ REST API
+       ▼
+Node.js + Express
+       │
+       ▼
+MongoDB
+```
+
+The frontend communicates with the backend through REST APIs. The backend handles authentication, business logic, product and order management, and database operations.
+
+## Academic Project
+
+Fresh Mart was developed as a **class/academic project** to gain practical experience in full-stack software development.
+
+The project provided hands-on experience with:
+
+* Frontend development
+* Backend development
+* REST API design
+* Database modeling
+* Authentication and authorization
+* API integration
+* E-commerce workflows
+* Git and GitHub
+* Debugging and troubleshooting
+
+## Running the Project Locally
+
+### Prerequisites
+
+Make sure you have installed:
+
+* Node.js
+* npm
+* MongoDB or access to a MongoDB database
+
+### Backend
+
+```bash
+cd backend
+npm install
+```
+
+Create a `.env` file based on the provided `.env.example` file and configure the required environment variables.
+
+Then start the backend:
+
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+### Frontend
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Open another terminal:
 
-**Use GitHub Codespaces**
+```bash
+cd frontend
+npm install
+npm run dev
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+The frontend and backend configuration may vary depending on the local development environment.
 
-## What technologies are used for this project?
+## Environment Variables
 
-This project is built with:
+Environment variables are required for services such as the database connection, authentication, and payment integration.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+For security, actual credentials and secrets are **not included in this repository**.
 
-## How can I deploy this project?
+Use the provided `.env.example` files as a reference when configuring the application locally.
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+## Current Project Status
 
-## Can I connect a custom domain to my Lovable project?
+The application is currently maintained as an academic portfolio project.
 
-Yes, you can!
+Some external services may require additional configuration before the application can be demonstrated as a fully deployed production system.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## What I Practiced Through This Project
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+This project helped me strengthen my understanding of:
+
+* React and TypeScript
+* Node.js and Express
+* MongoDB and Mongoose
+* REST API development
+* Authentication and authorization
+* Frontend-backend integration
+* Database operations
+* Payment API integration
+* Git/GitHub workflows
+* Debugging full-stack applications
+
+## Author
+
+**Abyssinia Getachew**
+
+BSc Computer Science Graduate
+Unity University
+
+GitHub: [@abyssiniagetachew4-cmyk](https://github.com/abyssiniagetachew4-cmyk)
